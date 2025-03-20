@@ -62,7 +62,7 @@ You can install the required Python libraries using `pip`:
 
 ```bash
 pip install paedldescriptors pandas scikit-learn flask biopython transformers torch
-
+```
 ## **Usage**
 
 The **COX-2 Inhibition Drug Discovery Website** allows users to upload CSV files containing SMILES representations of molecules for predicting their effectiveness in COX-2 inhibition. Using machine learning models and PaDEL descriptors, the platform calculates molecular properties and generates predictions. Additionally, the system fetches relevant PubMed articles for scientific context and creates automated reports combining the predictions and literature. This streamlined process enables quicker assessments of drug candidates.
