@@ -3,7 +3,7 @@
 ## Overview
 This project is a drug discovery web application designed to predict the effectiveness of new drugs for COX-2 inhibition. It consists of a **React frontend** and a **Flask backend**. The backend trains a machine-learning model using data from the **ChEMBL website**, leveraging **PaDEL descriptors** to calculate molecular properties and make predictions.
 
----
+
 ## **Features**
 
 1. **Drug Effectiveness Prediction**:
@@ -37,4 +37,3 @@ This project is a drug discovery web application designed to predict the effecti
    - The website can be deployed on cloud platforms like **Heroku**, **AWS**, or **DigitalOcean**.
    - The frontend can be deployed on platforms like **Vercel**, **Netlify**, or **AWS S3**.
 
----
