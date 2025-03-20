@@ -1,121 +1,40 @@
-COX-2 Inhibition Drug Discovery Website
+# COX-2 Inhibition Drug Discovery Website
 
-Overview
+## Overview
+This project is a drug discovery web application designed to predict the effectiveness of new drugs for COX-2 inhibition. It consists of a **React frontend** and a **Flask backend**. The backend trains a machine-learning model using data from the **ChEMBL website**, leveraging **PaDEL descriptors** to calculate molecular properties and make predictions.
 
-This project is a drug discovery web application designed to predict the effectiveness of new drugs for COX-2 inhibition. It consists of a React frontend and a Flask backend. The backend trains a machine-learning model using data from the ChEMBL website, leveraging PaDEL descriptors to calculate molecular properties and make predictions.
+---
+## **Features**
 
-Project Structure
+1. **Drug Effectiveness Prediction**:
+   - Predicts the effectiveness of new drugs for **COX-2 inhibition**.
+   - Utilizes **SMILES representations** of molecules to calculate descriptors and predict drug effectiveness.
+   - Relies on a **Histogram Gradient Boosting** machine learning model trained on data from **ChEMBL**.
 
-Getting Started
+2. **Descriptor Calculation**:
+   - Extracts molecular descriptors using **PaDEL-Descriptor**.
+   - Computes properties such as molecular weight, logP, and more, which are used as input features for the machine learning model.
+   - The system uses **PaDEL** software, which requires **Java** to calculate descriptors.
 
-Prerequisites
+3. **Molecule Visualization**:
+   - Generates molecular images using **RDKit**.
+   - Provides a graphical representation of molecules based on their SMILES strings.
 
-Ensure you have the following installed:
+4. **Frontend (React)**:
+   - Features a user-friendly interface built with **React**.
+   - Allows users to upload CSV files containing **SMILES** strings.
+   - Displays the prediction results, including **drug effectiveness** and **confidence score**.
 
-Node.js (for the React frontend)
+5. **Backend (Flask API)**:
+   - The backend is powered by **Flask**, exposing an API for calculating descriptors, making predictions, and visualizing molecules.
+   - Supports file uploads via **POST** requests and returns the prediction results in **JSON format**.
 
-Python 3 (for the Flask backend)
+6. **Scientific Research Integration**:
+   - Fetches relevant articles from **PubMed** using the **Entrez API**.
+   - Provides links to articles related to the effects of COX-2 inhibitors on drug discovery and health.
 
-pip (Python package manager)
+7. **Deployment**:
+   - The website can be deployed on cloud platforms like **Heroku**, **AWS**, or **DigitalOcean**.
+   - The frontend can be deployed on platforms like **Vercel**, **Netlify**, or **AWS S3**.
 
-Java (for PaDEL descriptor calculations)
-
-Backend (Flask) Setup
-
-1. Navigate to the backend folder
-
-2. Create a virtual environment (optional)
-
-3. Install dependencies
-
-4. Run the Flask server
-
-By default, the Flask API should be available at http://127.0.0.1:5000.
-
-Frontend (React) Setup
-
-1. Navigate to the frontend folder
-
-2. Install dependencies
-
-3. Start the React development server
-
-By default, the React app should be available at http://localhost:3000.
-
-API Endpoints
-
-Method
-
-Endpoint
-
-Description
-
-POST
-
-/upload
-
-Accepts a CSV file, calculates descriptors, and predicts drug effectiveness.
-
-Example Request
-
-To test the API, send a file using Postman or cURL:
-
-Response Example:
-
-Machine Learning Pipeline
-
-Upload CSV File: The user uploads a CSV containing SMILES representations of molecules.
-
-Descriptor Calculation: The system uses PaDEL-Descriptor to extract molecular properties.
-
-Feature Selection: The model selects relevant descriptors from descriptor_list.csv.
-
-Prediction: The trained Histogram Gradient Boosting model predicts drug effectiveness.
-
-Molecule Visualization: The system generates molecular images using RDKit.
-
-Common Issues & Troubleshooting
-
-1. PaDEL Descriptor Calculation Fails?
-
-Ensure Java is installed and available in the system path.
-
-Try running the descriptor calculation manually:
-
-2. CORS Errors in React?
-
-Install and enable Flask-CORS in app.py:
-
-Then add:
-
-Deployment
-
-Backend Deployment (Flask API)
-
-Deploy on Heroku, AWS, or DigitalOcean.
-
-Use Gunicorn for production:
-
-Frontend Deployment (React App)
-
-Deploy on Vercel, Netlify, or AWS S3.
-
-Example Netlify deployment:
-
-Contributing
-
-Feel free to submit issues and pull requests:
-
-Fork the repo
-
-Create a new branch (git checkout -b feature-name)
-
-Commit your changes (git commit -m "Added new feature")
-
-Push to the branch (git push origin feature-name)
-
-Open a Pull Request
-
-
-
-
+---
