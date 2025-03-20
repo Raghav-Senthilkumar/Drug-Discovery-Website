@@ -37,3 +37,28 @@ This project is a drug discovery web application designed to predict the effecti
    - The website can be deployed on cloud platforms like **Heroku**, **AWS**, or **DigitalOcean**.
    - The frontend can be deployed on platforms like **Vercel**, **Netlify**, or **AWS S3**.
 
+## **Requirements**
+
+To run this application, you need the following Python libraries and tools installed:
+
+### **Python Libraries**:
+
+- `paedldescriptors` – For calculating molecular descriptors using PaDEL software.
+- `pandas` – For data manipulation and handling CSV files containing molecular data.
+- `scikit-learn` – For machine learning, particularly for training and evaluating the **Histogram Gradient Boosting** model for drug effectiveness prediction.
+- `flask` – For the backend API to serve predictions and handle file uploads.
+- `biopython` – For interacting with biological data, especially to fetch PubMed articles using the Entrez API.
+- `transformers` – For using **Hugging Face** models like GPT-2 to generate reports based on predictions.
+- `torch` – For running **Hugging Face** models and performing deep learning tasks.
+
+### **Frontend Tools**:
+
+- `react` – For building the interactive user interface for the web application.
+- `node.js` – For running the React development environment and managing dependencies.
+
+### **Installing Dependencies**:
+
+You can install the required Python libraries using `pip`:
+
+```bash
+pip install paedldescriptors pandas scikit-learn flask biopython transformers torch
