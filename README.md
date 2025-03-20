@@ -67,13 +67,13 @@ pip install paedldescriptors pandas scikit-learn flask biopython transformers to
 
 The **COX-2 Inhibition Drug Discovery Website** allows users to upload CSV files containing SMILES representations of molecules for predicting their effectiveness in COX-2 inhibition. Using machine learning models and PaDEL descriptors, the platform calculates molecular properties and generates predictions. Additionally, the system fetches relevant PubMed articles for scientific context and creates automated reports combining the predictions and literature. This streamlined process enables quicker assessments of drug candidates.
 
----
+
 
 ## **Why It’s Helpful**
 
 This website helps accelerate the drug discovery process by automating molecular descriptor calculations and drug effectiveness predictions. By reducing the time and resources spent on manual research, it provides a more efficient way for researchers to identify potential drug candidates. The integration of PubMed articles and molecular visualizations further enhances the value of the platform, offering comprehensive insights into the effectiveness of the drugs being studied.
 
----
+
 
 ## **Who It’s For**
 
